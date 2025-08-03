@@ -23,9 +23,9 @@ This repo keeps me accountable and helps me track my daily progress while learni
 
 ## 📅 Daily Progress
 
-| 📅 Day   | 📚 Topic / What I Learned             | 📁 Code Folder |
+| S.NO.       | 📚 Topic / What I Learned             | 📁 Code Folder |
 |--------|---------------------------------------|----------------|
-| Day 01 | Introduction, Basics, and Flowcharts  | [day01](day01) |
+| 1 | Syntax  | [syntax](Topics/syntax.cpp) |
 
 > 📝 *I'll keep updating this table as I learn more.*
 
