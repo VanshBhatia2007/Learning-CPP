@@ -26,7 +26,8 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | S.NO.       | 📚 Topic / What I Learned             | 📁 Code Folder |
 |--------|---------------------------------------|----------------|
 | 1 | Syntax  | [syntax](Topics/introduction/syntax.cpp) |
-| 2 | Identifiers  | [syntax](Topics/identifiers/syntax.cpp) |
+| 2 | Identifiers  | [Identifiers](Topics/identifiers) |
+| 3 | Conditionals  | [conditionals](Topics/conditionals) |
 
 > 📝 *I'll keep updating this table as I learn more.*
 
