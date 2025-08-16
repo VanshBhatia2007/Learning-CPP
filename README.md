@@ -28,6 +28,10 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | 1 | Syntax  | [syntax](Topics/introduction/syntax.cpp) |
 | 2 | Identifiers  | [Identifiers](Topics/identifiers) |
 | 3 | Conditionals  | [conditionals](Topics/conditionals) |
+| 4 | Constans  | [constans](Topics/constans) |
+| 5 | macro  | [macro](Topics/macro) |
+| 6 | opreators | [opreators](Topics/opreators) |
+| 7 | Typecasting  | [typecasting](Topics/typecasting) |
 
 > 📝 *I'll keep updating this table as I learn more.*
 
