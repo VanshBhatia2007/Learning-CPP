@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
+
 int main(){
-    bool a;
-    cin>> boolalpha >>a;
-    cout<< boolalpha <<a;
+    cout<<(int)'A'<<endl;
     return 0;
 }

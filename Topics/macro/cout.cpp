@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
+#define PRINT cout<<
 int main(){
-    bool a;
-    cin>> boolalpha >>a;
-    cout<< boolalpha <<a;
+    PRINT "hello";
     return 0;
 }

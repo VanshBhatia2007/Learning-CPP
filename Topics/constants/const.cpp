@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
+
 int main(){
-    bool a;
-    cin>> boolalpha >>a;
-    cout<< boolalpha <<a;
+    const float pi =3.14;
+    cout<<pi;
     return 0;
 }

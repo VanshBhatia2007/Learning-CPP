@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
+#define PI 3.14
 int main(){
-    bool a;
-    cin>> boolalpha >>a;
-    cout<< boolalpha <<a;
+    cout<<PI*2<<endl;
     return 0;
 }
