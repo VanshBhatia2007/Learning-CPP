@@ -34,7 +34,7 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | 7 | Typecasting  | [typecasting](Topics/typecasting) |
 | 8 | Bitwise  | [bitwise](Topics/bitwise) |
 | 9 | Break & Continue  | [break and continue](Topics/break_and_continue) |
-| 7 | For Loop  | [for loop](Topics/for) |
+| 10 | For Loop  | [for loop](Topics/for) |
 
 > 📝 *I'll keep updating this table as I learn more.*
 
