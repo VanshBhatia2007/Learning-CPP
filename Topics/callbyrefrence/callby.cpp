@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int update(int x) {
-	x = 2;
-    return x;
+void update(int x) {
+	x = x + 1;
+    
 }
 
 int main() {
@@ -12,9 +12,9 @@ int main() {
 
 	cout << "Before update: " << a << endl;
 
-	 int b= update(a);
+	update(a);
 
-	cout << "After update: " << b << endl;
+	cout << "After update: " << a << endl;
 
 	return 0;
 }
