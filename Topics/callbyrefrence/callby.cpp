@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void update(int x) {
+void update(int &x) {
 	x = x + 1;
     
 }
