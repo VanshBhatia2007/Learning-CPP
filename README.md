@@ -37,7 +37,14 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | 10 | For Loop  | [for loop](Topics/for) |
 | 11 | Scoops  | [Scoops](Topics/scoop) |
 | 12 | Ternary  | [Ternary](Topics/ternary) |
-| 10 | Arrays  | [Arrays](Topics/arrays) |
+| 13 | Arrays  | [Arrays](Topics/arrays) |
+| 14 | Call By Refrence  | [Call by refrence](Topics/callbyrefrence) |
+| 15 | Do While  | [do while](Topics/do-while) |
+| 16 | Functions  | [Functions](Topics/functions) |
+| 17 | Switch  | [Swutch](Topics/switch) |
+| 18 | Functions  | [Functions](Topics/functions) |
+| 19 | Pointers  | [Pointers](Topics/pointers) |
+| 20 | Sorting  | [Sorting](Topics/Sorting) |
 
 > 📝 *I'll keep updating this table as I learn more.*
 
