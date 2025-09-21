@@ -8,7 +8,7 @@ int fact(int n){
 
     }
     //recursive case: case fact(n)=n*fact(n-1)
-    return n* fact(n-1);
+    return n*fact(n-1);
 }
 int main(){
     cout<<fact(5);
