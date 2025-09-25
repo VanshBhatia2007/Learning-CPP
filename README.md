@@ -45,6 +45,10 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | 18 | Functions  | [Functions](Topics/functions) |
 | 19 | Pointers  | [Pointers](Topics/pointers) |
 | 20 | Sorting  | [Sorting](Topics/Sorting) |
+| 21 | 2d-array  | [2d-array](Topics/2d-array) |
+| 22 | Character Array  | [Character Array](Topics/character_array) |
+| 23 | Searching  | [Searching](Topics/searching_algo) |
+| 24 | Recursion  | [recursion](Topics/recursion) |
 
 > 📝 *I'll keep updating this table as I learn more.*
 
