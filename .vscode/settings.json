@@ -1,3 +1,8 @@
 {
-    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve"
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "typeinfo": "cpp",
+        "iostream": "cpp"
+    }
 }
