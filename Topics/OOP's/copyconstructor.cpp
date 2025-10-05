@@ -49,6 +49,7 @@ int main(){
 
     //copy constructor
     car c=a;
+    c=b;
     a.print();
     c.print();
 }

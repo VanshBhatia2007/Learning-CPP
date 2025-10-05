@@ -27,7 +27,13 @@ public:
         price =p;
         model=m;
     }
-    
+    car(car &X) {
+		cout << "Inside copy constructor\n";
+		strcpy(name, X.name);
+		price = X.price;
+		model = X.model;
+	}
+   
 };
 
 int main(){
