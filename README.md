@@ -49,7 +49,9 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | 22 | Character Array  | [Character Array](Topics/character_array) |
 | 23 | Searching  | [Searching](Topics/searching_algo) |
 | 24 | Recursion  | [recursion](Topics/recursion) |
-
+| 25 | DMA  | [DMA](Topics/DMA) |
+| 26 | OOPS's  | [OOPS's](Topics/OOP's) |
+| 27 | Vectors  | [vector](Topics/vector) |
 > 📝 *I'll keep updating this table as I learn more.*
 
 ---
