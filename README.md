@@ -52,6 +52,7 @@ This repo keeps me accountable and helps me track my daily progress while learni
 | 25 | DMA  | [DMA](Topics/DMA) |
 | 26 | OOPS's  | [OOPS's](Topics/OOP's) |
 | 27 | Vectors  | [vector](Topics/vector) |
+
 > 📝 *I'll keep updating this table as I learn more.*
 
 ---
