@@ -23,7 +23,7 @@ public:
                 arr[i]=oldarr[i];
             }
             delete []oldarr;
-        }
+        }-
         arr[cs++]=d;
     }
 
@@ -48,7 +48,7 @@ public:
 
 int main(){
     UserVector v;
-    for(int i=1;i<=50;i++){
+    for(int i=1;i<=10;i++){
         v.push_back(i);
     }
     cout<<"size "<<v.size()<<endl;
