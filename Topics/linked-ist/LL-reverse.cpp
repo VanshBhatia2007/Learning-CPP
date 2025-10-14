@@ -10,19 +10,6 @@ public:
         next =NULL;
     }
 };
-
-void insertatfront(node* &head ,node* &tail,int d){
-    if(head==NULL){
-        node* n=new node(d);
-        head=tail=n;
-    }
-    else{
-        node* n=new node(d);
-        n->next=head;
-        head=n;
-    }
-}
-
 void insertatend(node* &head ,node* &tail,int d ){
     if(head==NULL){
         node* n=new node(d);
@@ -34,7 +21,6 @@ void insertatend(node* &head ,node* &tail,int d ){
         tail=n;
     }
 }
-
 int length(node* head){
     int cnt=0;
     while(head!=NULL){
@@ -43,31 +29,25 @@ int length(node* head){
     }
     return cnt;
 }
-
-void insertatmid(node* head,node* tail,int pos,int d){
-    if(pos>length(head)){
-        insertatend(head,tail,d);
-    }
-    else if(pos==0){
-        insertatfront(head,tail,d);
-    }
-    else{
-        node* temp=head;
-        for(int i=0;i<pos-1;++i){
-        temp=temp->next;
-        }
-        node* n=new node(d);
-        n->next=temp->next;
-        temp->next =n;
-    }
-    
-}
 void print(node* head){
     while(head!=NULL){
         cout<<head->data<<"-->";
         head=head->next;
     }
     cout<<"NULL\n";
+}
+
+//reverse
+
+void reverse(node* &head,node* &tail){
+    node* c=head,*p=NULL, *n;
+    while(c!=NULL){
+        n=c->next;
+        c->next=p;
+        p=c;
+        c=n;
+    }
+    swap(head,tail);
 }
 int main(){
     node* head,*tail;
@@ -77,6 +57,7 @@ int main(){
     insertatend(head,tail,3);
     insertatend(head,tail,4);
     insertatend(head,tail,5);
-    cout<<length(head)<<endl;
+    print(head);
+    reverse(head,tail);
     print(head);
 }
