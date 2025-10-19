@@ -5,11 +5,10 @@ int main(){
     int n=sizeof(nums)/sizeof(int);
     int target=5,sum;
     for(int i=0;i<n;i++){
-        int a=i;
-        for(int i=0;i<n;i++){
-            sum=nums[i]+nums[a];
+        for(int j=i+1;j<n;j++){
+            sum=nums[i]+nums[j];
             if(sum==target){
-                cout<<nums[a]<<","<<nums[i]<<endl;
+                cout<<nums[i]<<","<<nums[j]<<endl;
             }
         }
     }
