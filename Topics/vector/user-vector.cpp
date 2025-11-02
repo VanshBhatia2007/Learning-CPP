@@ -23,7 +23,7 @@ public:
                 arr[i]=oldarr[i];
             }
             delete []oldarr;
-        }-
+        }
         arr[cs++]=d;
     }
 
