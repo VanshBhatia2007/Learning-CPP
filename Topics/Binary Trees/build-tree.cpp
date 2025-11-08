@@ -73,7 +73,70 @@ int diameter(node* root){
 	int op2 = diameter(root->left);
 	int op3= diameter(root->right);
 	return max(op1,max(op2,op3));
+
 }
+class Pair{
+public:
+	int height,diameter;	
+};
+
+Pair fastdiameter(node* root){
+	//base case
+	if(root==NULL){
+		Pair ans;
+		ans.height=ans.diameter=0;
+		return ans;
+	}
+	Pair left=fastdiameter(root->left);
+	Pair right=fastdiameter(root->right);
+	Pair ans;
+	ans.height=max(left.height,right.height)+1;
+	int op1=left.height+right.height;
+	int op2=left.diameter;
+	int op3=right.diameter;
+	ans.diameter=max(op1,max(op2,op3));
+
+	return ans;
+}
+
+void levelorderprint(node* root){
+	queue<node*> q;
+	q.push(root);
+	q.push(NULL);
+
+	while(!q.empty()){
+		node* f=q.front();
+		q.pop();
+
+		if(f!=NULL){
+			cout<<f->data<<" ";
+			if(f->left!=NULL){
+				q.push(f->left);
+			}
+
+			if(f->right!=NULL){
+				q.push(f->right);
+			}
+		}
+		else{
+			cout << '\n';
+			if (!q.empty()) {
+				q.push(NULL);
+			}
+		}
+	}
+
+}
+
+
+void mirror(node* root){
+	if(root==NULL) return;
+
+	swap(root->left,root->right);
+	mirror(root->left);
+	mirror(root->right);
+}
+
 int main(){
 	node* root = createtree();
 	preorder(root);
@@ -81,5 +144,10 @@ int main(){
 	cout<<height(root)<<endl;
 	cout<<countnodes(root)<<endl;
 	cout<<diameter(root)<<endl;
+	Pair ans = fastdiameter(root);
+	cout << "Fast height   : " << ans.height << endl;
+	cout << "Fast Diameter : " << ans.diameter << endl;
+	levelorderprint(root);
+	mirror(root);
 	return 0;
 }

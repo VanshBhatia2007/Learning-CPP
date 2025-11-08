@@ -49,6 +49,7 @@ void reverse(node* &head,node* &tail){
     }
     swap(head,tail);
 }
+
 int main(){
     node* head,*tail;
     head=tail=NULL;
