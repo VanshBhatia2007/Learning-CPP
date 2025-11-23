@@ -42,6 +42,29 @@ int topDown(int amount, int deno[], int n, int dp[]) {
 
 	return dp[amount] = ans;
 }
+int bottomup(int amount, int *deno, int n) {
+	int dp[10000];
+	for (int i = 0; i < 10000; ++i)
+	{
+		dp[i] = INT_MAX;
+	}
+
+	dp[0] = 0; // Initialization
+	for (int rupay = 1; rupay <= amount; ++rupay)
+	{
+		for (int i = 0; i < n; ++i)
+		{
+			if (rupay >= deno[i]) {
+				if (dp[rupay - deno[i]] != INT_MAX) {
+					dp[rupay] = min(dp[rupay - deno[i]] + 1, dp[rupay]);
+				}
+			}
+		}
+	}
+
+
+	return dp[amount];
+}
 
 int main() {
 
@@ -55,8 +78,8 @@ int main() {
 	{
 		dp[i] = -1;
 	}
-	// cout << topdown(amount, deno, n, dp) << endl;
-	// cout << bottomup(amount, deno, n) << endl;
+	cout << topDown(amount, deno, n, dp) << endl;
+	cout << bottomup(amount, deno, n) << endl;
 	cout << solve(amount, deno, n) << endl;
 
 	return 0;
