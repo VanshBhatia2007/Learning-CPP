@@ -1,10 +1,25 @@
 #include <iostream>
 using namespace std;
 
+
+void topdown(int *a,int n,int i,int *dp){
+	if(i==n) return ;
+
+	int ans=1;
+	for(int j=i-1;j>=0;j--){
+		if(a[j]<a[i]){
+			ans=max(dp[j]+1,ans);
+		}
+	}
+	dp[i]=ans;
+	topdown(a,n,i+1,dp);
+}
+
 int main() {
 	int a[] = {10,  9,  3,  5,  4,  11,  7,  8};
 	int n = sizeof(a) / sizeof(int);
-
+	
+	//bottom up
 	int dp[100] = {0};
 
 	for (int i = 0; i < n; ++i) dp[i] = 1;
