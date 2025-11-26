@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstring>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 int lcs(string &s1, string &s2,int n,int m,int dp[][100]){
@@ -51,7 +52,24 @@ int bottomup(string s1, string s2) {
 
 	return dp[s1.size()][s2.size()];
 }
-
+void printlcs(string &s1, string &s2,int n,int m,int dp[][100],string op=""){
+    if(n==0 and m==0){
+        reverse(op.begin(),op.end());
+        cout<<op<<endl;
+        return ;
+    }
+    if(s1[n-1]==s2[m-1]){
+        printlcs(s1,s2,n-1,m-1,dp,op+s1[n-1]);
+    }
+    else{
+        if(dp[n][m]==dp[n-1][m]){
+            printlcs(s1,s2,n-1,m,dp,op);
+        }
+        if(dp[n][m]==dp[n][m-1]){
+            printlcs(s1,s2,n,m-1,dp,op);
+        }
+    }
+}
 
 int main() {
 
@@ -63,6 +81,6 @@ int main() {
 	cout << topdown(s1, s2, s1.size(), s2.size(), dp) << endl;
 	cout << bottomup(s1, s2) << endl;
 	cout << lcs(s1, s2, s1.size(), s2.size(),dp) << endl;
-
+    printlcs(s1,s2,s1.size(),s2.size(),dp);
 	return 0;
 }
