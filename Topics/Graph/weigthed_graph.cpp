@@ -1,20 +1,47 @@
-#include<iostream>
-#include<unordered_map>
-#include<list>
+#include <iostream>
+#include <unordered_map>
+#include <list>
+#include <queue>
 using namespace std;
 
-class Graph{
+template<typename T>
+class Graph {
 public:
-    unordered_map<string, list<pair<string,int>>>adj;
+	unordered_map<T, list< pair<T, int> > > adj;
 
-    void addedge(string u,string v,int d,bool bidir=true){
-        adj[u].push_back({v,d});
-        if(bidir==true){
-            adj[v].push_back({u,d});
-        }
-    }
+	void addEdge(T u, T v, int dist, bool bidir = true) {
+		adj[u].push_back({v, dist});
+		if (bidir) {
+			adj[v].push_back({u, dist});
+		}
+	}
 
-    void print(){
-        for
-    }
+	void print() {
+		for (auto p : adj) {
+			cout << p.first << " : ";
+			for (auto child_pair : p.second) {
+				cout << "( " << child_pair.first << ", " << child_pair.second << " ) ";
+			}
+			cout << endl;
+		}
+	}
+
 };
+
+
+int main() {
+	Graph <string> g;
+
+	g.addEdge("Amristar", "Jaipur", 4);
+	g.addEdge("Mumbai", "Jaipur", 8);
+	g.addEdge("Delhi", "Jaipur", 2);
+	g.addEdge("Amristar", "Agra", 1);
+	g.addEdge("Delhi", "Agra", 1);
+	g.addEdge("Bhopal", "Agra", 2);
+	g.addEdge("Bhopal", "Mumbai", 3);
+
+	g.print();
+
+	return 0;
+}
+
